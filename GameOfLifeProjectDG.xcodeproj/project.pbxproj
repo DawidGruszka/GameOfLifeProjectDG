@@ -23,8 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F46A65521EF347400DF9FDD /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		6F46A65621EF34A500DF9FDD /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		6F46A65721EF34BF00DF9FDD /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		6FA6ACB321EE4A4900189625 /* GameOfLifeProjectDG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameOfLifeProjectDG; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA6ACB621EE4A4900189625 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6FF80AD621EF3889004E4DE6 /* Choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Choices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				6FA6ACB621EE4A4900189625 /* main.cpp */,
+				6FF80AD621EF3889004E4DE6 /* Choices.h */,
+				6F46A65721EF34BF00DF9FDD /* Board.h */,
+				6F46A65621EF34A500DF9FDD /* Cell.h */,
+				6F46A65521EF347400DF9FDD /* Menu.h */,
 			);
 			path = GameOfLifeProjectDG;
 			sourceTree = "<group>";
