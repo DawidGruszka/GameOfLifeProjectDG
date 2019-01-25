@@ -10,21 +10,24 @@
 #define Menu_h
 #include "Choices.h"
 #include "Board.h"
+#include <unistd.h>
 
 
-class Menu: public Board, public Choices{
+class Menu: public Choices{
 public:
+    //Choices choice;
+    char k;
+    char i;
+    char z;
+    int d;
+    int u;
+    
+    Board board;
+    
     Menu(){};
     
-    void menu(Board board){
-        char k;
-        char i;
-        char z;
-        int d;
-        int u;
-        
-        Choices choice;
-        
+    void menu(){
+    
         i= 2;
         
         
@@ -34,7 +37,7 @@ public:
             cout<<"Do you want to read previous state, check demo(oscillator), or start from the beginning?\n*r for read*\n*n for new beginning*\n*d for demo*\n\n";
             
             try{
-                k=choice.mainChoice();
+                k=mainChoice();
             }
             catch(const char* x){
                 d=1;
@@ -65,6 +68,7 @@ public:
             
             cout<<"Type in '1' to break or anything else to continue.\n\n";
             cin>>i;
+            
             if(i!='1'){
                 board.calculateBoard(); //calculates next board with respect to Conway's game of life rules
             }
@@ -73,7 +77,7 @@ public:
             u=0;
         cout<<"Do you want to save?\n*y for yes*\n*n for no*\n";
         try{
-            z=choice.saveChoide();
+            z=saveChoice();
         }
         catch(const char* o){
             u=1;

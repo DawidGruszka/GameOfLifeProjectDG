@@ -16,9 +16,8 @@
 using namespace std;
 
 int main() {
-    Board board;
     Menu menu;
-    menu.menu(board);
+    menu.menu();
     
     return 0;
 }

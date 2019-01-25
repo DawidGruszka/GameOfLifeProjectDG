@@ -39,7 +39,7 @@ public:
             }
             cout<<"\n";
         }
-        cout<<"\n";
+        cout<<endl;
     }
     
     void cleanBoard(){
@@ -115,7 +115,7 @@ public:
                 }}}
         
     }
-    
+   
     void saveBoard(){
         fstream fileS;
         fileS.open("/Users/dawid/Documents/xCode/GameOfLifeProjectDG/save.bin", ios::out | ios::binary);
@@ -151,6 +151,7 @@ public:
             }}
         
     }
+    
 };
 
 #endif /* Board_h */

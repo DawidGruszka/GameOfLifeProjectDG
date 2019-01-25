@@ -21,7 +21,7 @@ char mainChoice(){
     return k;
 }
     
-    char saveChoide(){
+    char saveChoice(){
         char x;
         cin>>x;
         if(x!='n' && x!='N' && x!='y' && x!='Y'){
