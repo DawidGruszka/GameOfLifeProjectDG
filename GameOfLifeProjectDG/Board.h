@@ -9,6 +9,8 @@
 #ifndef Board_h
 #define Board_h
 
+
+
 #define alive 1
 #define dead 0
 
@@ -60,11 +62,18 @@ public:
         cin>>amount;
         
         for(x=1; x<=amount; x++){
+            do{
+                cordx=0;
+            
             cout<<"Type in x coordinate for life cell #"<< x << "(1-"<< heightx <<")\n";
             cin>>cordx;
+            }while(cordx>=heightx && cordx<=1);
+            
+            do{
+                cordy=0;
             cout<<"Type in y coordinate for life cell #"<< x << "(1-"<< widthx <<")\n";
             cin>>cordy;
-            
+            }while(cordy>=widthx && cordy<=1);
             
             board [cordy][cordx].state = alive;
         }
@@ -116,13 +125,13 @@ public:
         
     }
    
-    void saveBoard(){
+    /*void saveBoard(){
         fstream fileS;
         fileS.open("/Users/dawid/Documents/xCode/GameOfLifeProjectDG/save.bin", ios::out | ios::binary);
         fileS.write((char*)&board, sizeof(board));
         fileS.close();
         
-    }
+     }
     void readBoard(){
         int sum= 0;
         fstream fileR;
@@ -150,7 +159,7 @@ public:
                 sum += board[maxh][maxw].state;
             }}
         
-    }
+    }*/
     
 };
 

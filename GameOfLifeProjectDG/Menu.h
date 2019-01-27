@@ -9,13 +9,13 @@
 #ifndef Menu_h
 #define Menu_h
 #include "Choices.h"
-#include "Board.h"
-#include <unistd.h>
+#include "Files.h"
 
 
-class Menu: public Choices{
+
+class Menu: public Choices, public Files{
 public:
-    //Choices choice;
+    
     char k;
     char i;
     char z;
@@ -23,6 +23,8 @@ public:
     int u;
     
     Board board;
+    
+    
     
     Menu(){};
     
@@ -49,7 +51,7 @@ public:
             }
             else if(k=='r' || k=='R'){
                 try{
-                    board.readBoard(); //reads board from a file called "save.bin"
+                    board=readBoard(); //reads board from a file called "save.bin"
                 }
                 catch(const char* s){
                     cerr<< s;
@@ -57,7 +59,7 @@ public:
                 }
             }
             else if(k=='d' || k=='D'){
-                board.demoBoard(); //reads demo board from a file called "demo.bin"
+                board=demoBoard(); //reads demo board from a file called "demo.bin"
             }
         }while(d==1);
         
@@ -84,7 +86,7 @@ public:
             cerr<<o<<endl;
         }
         if(z=='y' || z=='Y'){
-            board.saveBoard();//saves the board to a file called "save.bin"
+            saveBoard<Board>(board);//saves the board to a file called "save.bin"
             cout<< "Saved!"<<endl;
         }
         else if(z=='n' || z=='N'){
