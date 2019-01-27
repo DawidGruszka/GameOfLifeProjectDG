@@ -125,41 +125,7 @@ public:
         
     }
    
-    /*void saveBoard(){
-        fstream fileS;
-        fileS.open("/Users/dawid/Documents/xCode/GameOfLifeProjectDG/save.bin", ios::out | ios::binary);
-        fileS.write((char*)&board, sizeof(board));
-        fileS.close();
-        
-     }
-    void readBoard(){
-        int sum= 0;
-        fstream fileR;
-        fileR.open("/Users/dawid/Documents/xCode/GameOfLifeProjectDG/save.bin", ios::in | ios::binary);
-        fileR.read((char*)&board, sizeof(board));
-        fileR.close();
-        
-        for(int maxh=0; maxh<=heightx; maxh++){  //checks if board in a file is empty
-            for(int maxw=0; maxw<=widthx; maxw++){
-                sum += board[maxh][maxw].state;
-            }}
-        if(sum==0){
-            throw "The board read from a save file is empty, start from the beginning.\n\n";
-        }
-    }
-    void demoBoard(){
-        int sum= 0;
-        fstream fileR;
-        fileR.open("/Users/dawid/Documents/xCode/GameOfLifeProjectDG/demo.bin", ios::in | ios::binary);
-        fileR.read((char*)&board, sizeof(board));
-        fileR.close();
-        
-        for(int maxh=0; maxh<=heightx; maxh++){  //checks if board in a file is empty
-            for(int maxw=0; maxw<=widthx; maxw++){
-                sum += board[maxh][maxw].state;
-            }}
-        
-    }*/
+    
     
 };
 

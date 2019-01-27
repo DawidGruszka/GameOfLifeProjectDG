@@ -11,9 +11,11 @@
 
 class Choices{
 public:
+    char k, x;
+    
 
 char mainChoice(){
-    char k;
+    
     cin>>k;
     if(k!='n' && k!='N' && k!='r' && k!='R' && k!='d' && k!='D'){
         throw "Error. Type in r, n or d.\n";
@@ -22,7 +24,7 @@ char mainChoice(){
 }
     
     char saveChoice(){
-        char x;
+        
         cin>>x;
         if(x!='n' && x!='N' && x!='y' && x!='Y'){
             throw "Wrong choice!";
