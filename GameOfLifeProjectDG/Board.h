@@ -9,7 +9,7 @@
 #ifndef Board_h
 #define Board_h
 
-
+#include "Cell.h"
 
 #define alive 1
 #define dead 0

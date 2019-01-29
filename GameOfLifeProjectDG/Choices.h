@@ -14,14 +14,14 @@ public:
     char k, x;
     
 
-char mainChoice(){
+    char mainChoice(){
     
-    cin>>k;
-    if(k!='n' && k!='N' && k!='r' && k!='R' && k!='d' && k!='D'){
-        throw "Error. Type in r, n or d.\n";
+        cin>>k;
+        if(k!='n' && k!='N' && k!='r' && k!='R' && k!='d' && k!='D'){
+            throw "Error. Type in r, n or d.\n";
+        }
+        return k;
     }
-    return k;
-}
     
     char saveChoice(){
         

@@ -13,11 +13,6 @@
 #include "Board.h"
 
 
-
-using namespace std;
-
-
-
 class Files{
 public:
     fstream file;

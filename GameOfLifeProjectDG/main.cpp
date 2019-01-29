@@ -5,7 +5,7 @@
 //  Created by Dawid Gruszka on 15/01/2019.
 //  Copyright © 2019 Dawid Gruszka. All rights reserved.
 //
-//Topics: Multiple inheritance, Templates, Exceptions, IOstreams    (5)
+//Topics: Multiple inheritance, Templates, Exceptions, IOstreams    (4)
 //Classes: Cell, Board, Files, Choices, Menu                        (5)
 
 #include <iostream>
